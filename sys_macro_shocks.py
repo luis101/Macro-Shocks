@@ -37,17 +37,19 @@ import warnings
 import dli
 import itertools
 
+import finfunc
+
 pd.options.mode.chained_assignment = None  # default='warn'
 
 ## Set directories
 
-input = "C:\\Users\\LUKAS_ZIMMERMANN\\OneDrive - S&P Global\\Data"
-input_econ = "C:\\Users\\LUKAS_ZIMMERMANN\\OneDrive - S&P Global\\Data\\Economic Data\\"
-zip_dir = "C:\\Users\\LUKAS_ZIMMERMANN\\OneDrive - S&P Global\\Data\\Financials"
+input = "<Directory>\\Data"
+input_econ = "<Directory>\\Data\\Economic Data\\"
+zip_dir = "<Directory>\\Data\\Financials"
 
-output = "C:\\Users\\LUKAS_ZIMMERMANN\\OneDrive - S&P Global\\Data\\"
+output = "<Directory>\\Data\\"
 
-res_out = "C:\\Users\\LUKAS_ZIMMERMANN\\OneDrive - S&P Global\\Projects\\Systematic Shocks\\Results"
+res_out = "<Directory>\\Projects\\Systematic Macro Shocks\\Results"
 
 
 #Daterange to be used:
@@ -68,7 +70,7 @@ maxdate = '12-31-2022'
     
 script = os.getcwd()
 #os.chdir(script+'\\Data')
-os.chdir('C:\\Users\\LUKAS_ZIMMERMANN\\OneDrive - S&P Global\\Data')
+os.chdir('<Directory>\\Data')
 
 
 #%% Load economic data:
@@ -922,9 +924,7 @@ del beta
 
 #%% Prepare analysis
 
-os.chdir('C:\\Users\\LUKAS_ZIMMERMANN\\OneDrive - S&P Global\\Projects')
-
-import finfunc
+#os.chdir('<Directory>\\Projects')
 
 # Define sets of variables
 

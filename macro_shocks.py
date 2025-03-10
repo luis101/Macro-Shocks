@@ -13,8 +13,8 @@ import dli
 
 ##Set directories:
     
-input_econ = "C:\\Users\\LUKAS_ZIMMERMANN\\OneDrive - S&P Global\\Data\\Economic Data\\"
-input = "C:\\Users\\LUKAS_ZIMMERMANN\\OneDrive - S&P Global\\Data"    
+input_econ = "<Directory>\\Data\\Economic Data\\"
+input = "<Directory>\\Data"    
 
 ##Load economic data:
 
